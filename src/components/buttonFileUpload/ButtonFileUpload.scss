@@ -1,0 +1,32 @@
+@import 'vars.scss';
+
+.inputUpload {
+	display: none;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	height: 42px;
+	width: fit-content;
+	padding: 0 10px;
+	margin: 26px 0;
+	border-radius: 12px;
+	color: $white;
+	background-color: $blue;
+
+	cursor: pointer;
+	transition: opacity 0.2s;
+
+	.icon {
+		margin-right: 10px;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.error {
+	color: red;
+}

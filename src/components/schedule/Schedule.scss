@@ -1,0 +1,52 @@
+@import 'mixins.scss';
+@import 'vars.scss';
+
+.wrapper {
+	width: 355px;
+	margin: 0 auto;
+	padding: 26px;
+	border-radius: 12px;
+	background-color: $white;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+	.scheduleTitle {
+		padding: 10px 0;
+		align-items: center;
+		display: flex;
+		border-bottom: 1px solid $black;
+
+		span {
+			@include font-heading;
+		}
+
+		.clockIcon {
+			color: $grey3;
+			font-size: 18px;
+			margin-right: 10px;
+		}
+	}
+
+	.dayLine {
+		display: flex;
+		justify-content: space-between;
+		padding: 8px 0;
+		text-align: end;
+		border-bottom: 1px solid $grey2;
+
+		.dayName {
+			font-weight: 500;
+			margin-right: 24px;
+
+			.today {
+				color: $green;
+				font-size: 12px;
+				line-height: 16px;
+				margin-left: 8px;
+			}
+		}
+
+		.closed {
+			color: $grey3;
+		}
+	}
+}

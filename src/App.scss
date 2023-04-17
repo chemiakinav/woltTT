@@ -1,0 +1,18 @@
+@import 'vars.scss';
+@import 'mixins.scss';
+
+.content {
+	@include font-regular;
+	height: 100%;
+	padding: 26px;
+	color: $black;
+	background-color: $grey1;
+	text-align: center;
+
+	.uploadSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 26px;
+	}
+}
